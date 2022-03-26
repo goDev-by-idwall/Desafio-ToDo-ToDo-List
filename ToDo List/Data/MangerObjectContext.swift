@@ -37,6 +37,7 @@ protocol managedUpdateProtocol {
 class ManagedObjectContext {
     private let entity = "Task_"
     
+    // singleton pattern
     static var shared: ManagedObjectContext = {
         let instance = ManagedObjectContext()
         
