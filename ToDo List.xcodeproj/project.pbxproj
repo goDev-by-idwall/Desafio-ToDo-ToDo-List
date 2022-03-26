@@ -15,6 +15,9 @@
 		15587EA427EF44D000CB9FD1 /* ToDo-List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */; };
 		15587EA727EF484800CB9FD1 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15587EA627EF484800CB9FD1 /* ToDoTableViewCell.swift */; };
 		15587EAC27EF4F7200CB9FD1 /* NewToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15587EAB27EF4F7200CB9FD1 /* NewToDoViewController.swift */; };
+		34EA6EB727EF664900E26023 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 34EA6EB627EF664900E26023 /* Data */; };
+		34EA6EBA27EF669700E26023 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EA6EB927EF669700E26023 /* CoreData.framework */; };
+		34EA6EBD27EF672800E26023 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EA6EBC27EF672800E26023 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		15587EA327EF44D000CB9FD1 /* ToDo-List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToDo-List.xcdatamodel"; sourceTree = "<group>"; };
 		15587EA627EF484800CB9FD1 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		15587EAB27EF4F7200CB9FD1 /* NewToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoViewController.swift; sourceTree = "<group>"; };
+		34EA6EB627EF664900E26023 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		34EA6EB927EF669700E26023 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		34EA6EBC27EF672800E26023 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EA6EBA27EF669700E26023 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,7 @@
 			children = (
 				15587E8D27EF426800CB9FD1 /* ToDo List */,
 				15587E8C27EF426800CB9FD1 /* Products */,
+				34EA6EB827EF669700E26023 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,12 +68,13 @@
 		15587E8D27EF426800CB9FD1 /* ToDo List */ = {
 			isa = PBXGroup;
 			children = (
+				34EA6EBB27EF671600E26023 /* Models */,
+				34EA6EB627EF664900E26023 /* Data */,
 				15587EA827EF4EF300CB9FD1 /* Scenes */,
 				15587EA527EF482F00CB9FD1 /* Cell */,
 				15587E8E27EF426800CB9FD1 /* AppDelegate.swift */,
 				15587E9027EF426800CB9FD1 /* SceneDelegate.swift */,
 				15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */,
-				15587E9227EF426800CB9FD1 /* HomeViewController.swift */,
 				15587E9727EF426A00CB9FD1 /* Assets.xcassets */,
 				15587E9927EF426A00CB9FD1 /* LaunchScreen.storyboard */,
 				15587E9C27EF426A00CB9FD1 /* Info.plist */,
@@ -93,6 +102,7 @@
 		15587EA927EF4EF600CB9FD1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				15587E9227EF426800CB9FD1 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -103,6 +113,22 @@
 				15587EAB27EF4F7200CB9FD1 /* NewToDoViewController.swift */,
 			);
 			path = NewTodo;
+			sourceTree = "<group>";
+		};
+		34EA6EB827EF669700E26023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34EA6EB927EF669700E26023 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34EA6EBB27EF671600E26023 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34EA6EBC27EF672800E26023 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +191,7 @@
 			files = (
 				15587E9B27EF426A00CB9FD1 /* LaunchScreen.storyboard in Resources */,
 				15587E9827EF426A00CB9FD1 /* Assets.xcassets in Resources */,
+				34EA6EB727EF664900E26023 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +207,7 @@
 				15587E8F27EF426800CB9FD1 /* AppDelegate.swift in Sources */,
 				15587E9127EF426800CB9FD1 /* SceneDelegate.swift in Sources */,
 				15587EA727EF484800CB9FD1 /* ToDoTableViewCell.swift in Sources */,
+				34EA6EBD27EF672800E26023 /* Task.swift in Sources */,
 				15587EAC27EF4F7200CB9FD1 /* NewToDoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
