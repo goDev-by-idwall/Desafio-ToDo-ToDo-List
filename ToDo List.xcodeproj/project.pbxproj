@@ -13,6 +13,9 @@
 		15587E9827EF426A00CB9FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15587E9727EF426A00CB9FD1 /* Assets.xcassets */; };
 		15587E9B27EF426A00CB9FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15587E9927EF426A00CB9FD1 /* LaunchScreen.storyboard */; };
 		15587EA427EF44D000CB9FD1 /* ToDo-List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */; };
+		2A3D51A527EF48BD0023C75F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3D51A427EF48BD0023C75F /* CoreData.framework */; };
+		2A3D51A727EF48D90023C75F /* MangerObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3D51A627EF48D90023C75F /* MangerObjectContext.swift */; };
+		2A3D51AA27EF49D20023C75F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3D51A927EF49D20023C75F /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		15587E9A27EF426A00CB9FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15587E9C27EF426A00CB9FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15587EA327EF44D000CB9FD1 /* ToDo-List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToDo-List.xcdatamodel"; sourceTree = "<group>"; };
+		2A3D51A427EF48BD0023C75F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2A3D51A627EF48D90023C75F /* MangerObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangerObjectContext.swift; sourceTree = "<group>"; };
+		2A3D51A927EF49D20023C75F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3D51A527EF48BD0023C75F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				15587E8D27EF426800CB9FD1 /* ToDo List */,
 				15587E8C27EF426800CB9FD1 /* Products */,
+				2A3D51A327EF48BD0023C75F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +64,8 @@
 		15587E8D27EF426800CB9FD1 /* ToDo List */ = {
 			isa = PBXGroup;
 			children = (
+				2A3D51A827EF49B10023C75F /* Models */,
+				2A3D51A227EF48830023C75F /* Data */,
 				15587E8E27EF426800CB9FD1 /* AppDelegate.swift */,
 				15587E9027EF426800CB9FD1 /* SceneDelegate.swift */,
 				15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */,
@@ -65,6 +75,30 @@
 				15587E9C27EF426A00CB9FD1 /* Info.plist */,
 			);
 			path = "ToDo List";
+			sourceTree = "<group>";
+		};
+		2A3D51A227EF48830023C75F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2A3D51A627EF48D90023C75F /* MangerObjectContext.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2A3D51A327EF48BD0023C75F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A3D51A427EF48BD0023C75F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A3D51A827EF49B10023C75F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A3D51A927EF49D20023C75F /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +175,8 @@
 				15587EA427EF44D000CB9FD1 /* ToDo-List.xcdatamodeld in Sources */,
 				15587E8F27EF426800CB9FD1 /* AppDelegate.swift in Sources */,
 				15587E9127EF426800CB9FD1 /* SceneDelegate.swift in Sources */,
+				2A3D51AA27EF49D20023C75F /* Task.swift in Sources */,
+				2A3D51A727EF48D90023C75F /* MangerObjectContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3753BCYQD8;
+				DEVELOPMENT_TEAM = JD3672J6VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ToDo List/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,7 +342,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3753BCYQD8;
+				DEVELOPMENT_TEAM = JD3672J6VN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ToDo List/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
