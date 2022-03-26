@@ -12,6 +12,7 @@
 		15587E9327EF426800CB9FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15587E9227EF426800CB9FD1 /* ViewController.swift */; };
 		15587E9827EF426A00CB9FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15587E9727EF426A00CB9FD1 /* Assets.xcassets */; };
 		15587E9B27EF426A00CB9FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15587E9927EF426A00CB9FD1 /* LaunchScreen.storyboard */; };
+		15587EA427EF44D000CB9FD1 /* ToDo-List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		15587E9727EF426A00CB9FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15587E9A27EF426A00CB9FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15587E9C27EF426A00CB9FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15587EA327EF44D000CB9FD1 /* ToDo-List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ToDo-List.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				15587E8E27EF426800CB9FD1 /* AppDelegate.swift */,
 				15587E9027EF426800CB9FD1 /* SceneDelegate.swift */,
+				15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */,
 				15587E9227EF426800CB9FD1 /* ViewController.swift */,
 				15587E9727EF426A00CB9FD1 /* Assets.xcassets */,
 				15587E9927EF426A00CB9FD1 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15587E9327EF426800CB9FD1 /* ViewController.swift in Sources */,
+				15587EA427EF44D000CB9FD1 /* ToDo-List.xcdatamodeld in Sources */,
 				15587E8F27EF426800CB9FD1 /* AppDelegate.swift in Sources */,
 				15587E9127EF426800CB9FD1 /* SceneDelegate.swift in Sources */,
 			);
@@ -344,6 +348,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15587EA227EF44D000CB9FD1 /* ToDo-List.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15587EA327EF44D000CB9FD1 /* ToDo-List.xcdatamodel */,
+			);
+			currentVersion = 15587EA327EF44D000CB9FD1 /* ToDo-List.xcdatamodel */;
+			path = "ToDo-List.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 15587E8327EF426800CB9FD1 /* Project object */;
 }
