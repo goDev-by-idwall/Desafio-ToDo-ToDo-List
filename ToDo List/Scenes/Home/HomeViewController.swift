@@ -40,8 +40,8 @@ class HomeViewController: UIViewController {
     
     @objc func callNewTodo() {
         let newToDoVC = NewToDoViewController()
-        
-        navigationController?.
+        newToDoVC.modalPresentationStyle = .fullScreen
+        present(newToDoVC,animated: true)
     }
 
     override func viewDidLoad() {
